@@ -1,6 +1,7 @@
 ﻿using DependencyInversionPrinciple.DOL;
 using DependencyInversionPrinciple.WithoutPrinciple.DAL;
 using DependencyInversionPrinciple.WithoutPrinciple.Factory;
+using DependencyInversionPrinciple.WithPrinciple;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace DependencyInversionPrinciple.WithoutPrinciple.BAL
 {
     public class EmployeeBusinessLogic
     {
-        EmployeeDataAccessLogic _employeeDataAccessLogic;
+        IEmployeeDataAccess _employeeDataAccessLogic;
 
         public EmployeeBusinessLogic()
         {
