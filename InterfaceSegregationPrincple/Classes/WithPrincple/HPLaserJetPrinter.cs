@@ -1,14 +1,13 @@
-﻿using InterfaceSegregationPrincple.Interfaces;
-using InterfaceSegregationPrincple.Interfaces.WithoutPrinciple;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using InterfaceSegregationPrincple.Interfaces.WithPrincple;
 
-namespace InterfaceSegregationPrincple.Classes.WithoutPrincple
+namespace InterfaceSegregationPrincple.Classes.WithPrincple
 {
-    internal class HPLaserJetPrinter : IPrinterTasks
+    public class HPLaserJetPrinter : IPrinterTasks, IFaxTasks, IPrintDuplexTasks
     {
         public void Fax(string content)
         {
@@ -17,7 +16,7 @@ namespace InterfaceSegregationPrincple.Classes.WithoutPrincple
 
         public void Print(string content)
         {
-            Console.WriteLine("print Done");
+            Console.WriteLine("Print Done");
         }
 
         public void PrintDuplex(string content)

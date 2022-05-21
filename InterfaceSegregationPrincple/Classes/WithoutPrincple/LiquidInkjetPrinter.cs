@@ -1,4 +1,5 @@
 ﻿using InterfaceSegregationPrincple.Interfaces;
+using InterfaceSegregationPrincple.Interfaces.WithoutPrinciple;
 using System;
 using System.Collections.Generic;
 using System.Linq;
